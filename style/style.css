@@ -142,6 +142,13 @@ input, select, button {
     }
 }
 
+
+@media(max-width: 767px) {
+    .weather-widget__city-name {
+        font-size: 1.7rem;
+    }
+}
+
 @media(max-width: 575px) {
 
     .weather-widget__city-name {
