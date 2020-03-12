@@ -1,0 +1,89 @@
+
+.card {
+    margin: 1.25rem 1.25rem 0;
+    padding: 1.25rem;
+    width: 240px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+.card__temp {
+    top: -1.25rem;
+    right: 0;
+    position: absolute;
+    color: #666;
+    font-weight: 300;
+    font-size: 4em;
+    line-height: 1.6em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
+}
+
+.card__description {
+    color: #777;
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .1s;
+}
+
+.card__speed {
+    margin-top: 0.625rem;
+    color: #999;
+    font-weight: 300;
+}
+
+.card__sky {
+    position: relative;
+    margin-top: 1.5625rem;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
+}
+
+.card__description {
+    text-transform: uppercase;
+}
+
+.card__image {
+    position: relative;
+    top: -18px;
+    left: -16px;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .5s;
+}
+
+.card__info {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(1) td:nth-child(2) {
+    padding-bottom: 20px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .7s;
+}
+
+tr:nth-child(2) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2) {
+    padding-bottom: 7px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .9s;
+}
+
+@-webkit-keyframes up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(15px);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(15px);
+    }
+    99% {
+        -webkit-animation-play-state: paused;
+    }
+    100% {
+        opacity: 1;
+    }
+}
