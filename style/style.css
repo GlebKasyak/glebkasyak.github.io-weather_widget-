@@ -54,11 +54,12 @@ input, select, button {
     transform: translate(-50%, -50%);
 }
 
-.error--show {
+.error.error--show {
     display: block;
 }
 
 .error__message {
+    font-weight: 700;
     height: 50px;
     overflow: auto;
     color: #721c24;

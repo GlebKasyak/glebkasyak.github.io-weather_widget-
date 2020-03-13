@@ -23,7 +23,7 @@ window.onload = function() {
     };
 
     const displayErrorMessage = err => {
-        error.classList.add("error-show");
+        error.classList.add("error--show");
         error.firstChild.innerText = `Error! ${ err }`;
         scrim.classList.add("scrim--remove");
     };
