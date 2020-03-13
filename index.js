@@ -118,6 +118,7 @@ window.onload = function() {
 
                 function showWeather(day) {
                   day.forEach( el => {
+
                     const card = document.createElement("div");
                     card.classList.add("card");
 
@@ -128,6 +129,7 @@ window.onload = function() {
                     const cardContent = `
                         <h3 class="card__description">${ description }</h3>
                         <p class="card__speed">Wind ${ el.wind.speed } km/h</p>
+                        <p class="card__time">Time ${ el.dt_txt.split(" ")[1].slice(0, 5) } </p>
                         <div class="card__sky">
                             <img src=${ cardIcon } class="card__image" alt=${ description } >
                              <h2 class="card__temp">${ Math.round(temp - 273.15) }&#8451;</h2>

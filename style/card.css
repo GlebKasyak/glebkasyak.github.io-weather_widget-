@@ -27,7 +27,7 @@
     -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .1s;
 }
 
-.card__speed {
+.card__speed, .card__time {
     margin-top: 0.625rem;
     color: #999;
     font-weight: 300;
